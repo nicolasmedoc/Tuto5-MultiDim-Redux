@@ -79,7 +79,7 @@ function ScatterplotContainer({xAttributeName, yAttributeName}){
     },[selectedItems])
 
     return(
-        <div ref={divContainerRef} className="scatterplotDivContainer col2">
+        <div ref={divContainerRef} className="scatterplotDivContainer col">
 
         </div>
     )
