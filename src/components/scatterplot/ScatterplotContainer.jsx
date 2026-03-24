@@ -65,7 +65,9 @@ function ScatterplotContainer({xAttributeName, yAttributeName}){
         }
 
         // get the current instance of scatterplotD3 from the Ref...
+        const scatterplotD3 = scatterplotD3Ref.current;
         // call renderScatterplot of ScatterplotD3...;
+        scatterplotD3.renderScatterplot(visData, xAttributeName, yAttributeName, controllerMethods);
     },[visData,dispatch]);// if dependencies, useEffect is called after each data update, in our case only visData changes.
 
     return(
